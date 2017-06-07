@@ -8,3 +8,12 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fet
 */
+
+/* HTML Foundation */
+
+
+/* Bootstrap Custom */
+.bg-primary {
+    color: #fff;
+    background-color: #292929;
+}
