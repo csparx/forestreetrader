@@ -1,0 +1,37 @@
+/*
+Style.css SASS File
+*/
+$darkgrey: #292929;
+$fetgreen: #218C40;
+
+
+.top-bar-align{
+  padding: 15px 0 0 0;
+}
+
+.bg-hover-fetgreen{
+  &:hover{
+    background-color: $fetgreen;
+  }
+}
+
+.main-nav-links{
+  a{
+    margin-top: 25px;
+    color: $darkgrey;
+    font-size: 16px;
+    &:hover{
+      border-top: 1px solid $fetgreen;
+      background-color: lighten($darkgrey, 80%)!important;
+    }
+  }
+}
+
+/* Bootstrap Custom */
+.bg-primary {
+    color: #fff;
+    background-color: $darkgrey;
+    a {
+      color: white;
+    }
+}

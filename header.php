@@ -15,28 +15,93 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://use.fontawesome.com/ef8c7632d4.js"></script>
 
+    <!-- SASS Include Files -->
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
     <?php wp_head(); ?>
 
 
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <div class="row bg-primary">
-          <div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1  col-sm-7 col-sm-offset-1  col-xs-7 col-xs-offset-1 ">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h4><i class="fa fa-facebook" aria-hidden="true"></i> <span class="visible-lg">Facebook</span></h4></div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h4><i class="fa fa-twitter" aria-hidden="true"></i> <span class="visible-lg">Twitter</span></h4></div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h4><i class="fa fa-youtube" aria-hidden="true"></i> <span class="visible-lg">Youtube</span></h4></div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h4><i class="fa fa-google-plus" aria-hidden="true"></i> <span class="visible-lg">Google+</span></h4></div>
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"><h4><i class="fa fa-envelope" aria-hidden="true"></i> <span class="visible-lg">Newsletter</span></h4></div>
+      <!-- Top Nav Bar Begin -->
+      <div class="bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 top-bar-align">
+              <div class="row">
+                <a href="https://www.facebook.com/forestreetrader/">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
+                  <h4><i class="fa fa-facebook" aria-hidden="true"></i> <span class="visible-lg-inline-block">Facebook</span></h4>
+                </div>
+                </a>
+                <a href="https://twitter.com/FE_Trader">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
+                  <h4><i class="fa fa-twitter" aria-hidden="true"></i> <span class="visible-lg-inline-block">Twitter</span></h4>
+                </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCZ1p_k-W6gNKhIcunkvgKEw">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
+                  <h4><i class="fa fa-youtube" aria-hidden="true"></i> <span class="visible-lg-inline-block">Youtube</span></h4>
+                </div>
+                </a>
+                <a href="https://plus.google.com/+ForesTreeEquipmentTraderMontgomery/">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
+                  <h4><i class="fa fa-google-plus" aria-hidden="true"></i> <span class="visible-lg-inline-block">Google+</span></h4>
+                </div>
+                </a>
+                <a href="http://www.forestreetrader.com/fet-newsletter/">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-hover-fetgreen">
+                  <h4><i class="fa fa-envelope" aria-hidden="true"></i> <span class="visible-lg-inline-block">Newsletter</span></h4>
+                </div>
+                </a>
+              </div>
+            </div>
+            <a href="http://www.southernloggintimesmagazine.com">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 top-bar-align">
+                  <h4 class="text-right">In Partnership With </h4>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/SLT-Logo-green.png" />
+                </div>
+              </div>
+            </div>
+            </a>
           </div>
+        </div>
+      </div>
+      <!-- Top Nav Bar End -->
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h4>In Partnership With </h4></div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/SLT-Logo-green.png" /></div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-          </div>
+      <!-- Main Nav Bar Begin -->
+      <div class="container">
+        <div class="row">
+          
+          <nav class="navbar navbar-light bg-faded main-nav">
+            <ul class="nav navbar-nav navbar-left">
+              <li>
+                <a class="navbar-brand" href="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/forestree-logo-with-blade-430x.png" width="430" height="95" alt="">
+                </a>
+              </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right main-nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
 
         </div>
       </div>
+      <!-- Main Nav Bar End -->
     </header>

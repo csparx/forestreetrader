@@ -1,0 +1,35 @@
+/*
+Style.css SASS File
+*/
+/* line 8, ../sass/style.scss */
+.top-bar-align {
+  padding: 15px 0 0 0;
+}
+
+/* line 13, ../sass/style.scss */
+.bg-hover-fetgreen:hover {
+  background-color: #218C40;
+}
+
+/* line 19, ../sass/style.scss */
+.main-nav-links a {
+  margin-top: 25px;
+  color: #292929;
+  font-size: 16px;
+}
+/* line 23, ../sass/style.scss */
+.main-nav-links a:hover {
+  border-top: 1px solid #218C40;
+  background-color: whitesmoke !important;
+}
+
+/* Bootstrap Custom */
+/* line 31, ../sass/style.scss */
+.bg-primary {
+  color: #fff;
+  background-color: #292929;
+}
+/* line 34, ../sass/style.scss */
+.bg-primary a {
+  color: white;
+}
