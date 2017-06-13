@@ -1,20 +1,54 @@
 /*
 Style.css SASS File
 */
+/* Imports */
+@import "compass/css3";
+
+/* SASS Colors */
 $darkgrey: #292929;
 $fetgreen: #218C40;
+$fetorange: #E39709;
+$fetbrown: #422e13;
+$fettext: #444;
 
-
+.fet-logo{
+  &:hover{
+    background-color: transparent!important;
+  }
+}
+.search-slider{
+  position: absolute;
+  top: 0;
+}
 .top-bar-align{
   padding: 15px 0 0 0;
 }
-
-.bg-hover-fetgreen{
-  &:hover{
-    background-color: $fetgreen;
-  }
+.main-nav{
+  margin-bottom: 0px;
+}
+.fet-green-line{
+  background-color: $fetgreen;
+  width: 100px;
+  height: 1px;
+  margin: 10px auto;
+}
+.fetorange-outline{
+  border: $fetorange solid 4px;
 }
 
+/* Button Style */
+.btn-fetorange{
+  background-color: $fetorange;
+  color: white;
+}
+
+/* Text Style */
+.fet-title{
+  font-weight: 800;
+  font-size: 31.5px;
+  line-height: 40px;
+  color: $fettext;
+}
 .main-nav-links{
   a{
     margin-top: 25px;
@@ -27,6 +61,25 @@ $fetgreen: #218C40;
   }
 }
 
+/* Background Style */
+.bg-fetgreen{
+  background-color: $fetgreen;
+  color: white!important;
+}
+.bg-fetorange{
+  background-color: $fetorange;
+  color: white!important;
+}
+.bg-fetbrown{
+  background-color: $fetbrown;
+  color: white!important;
+}
+.bg-hover-fetgreen{
+  &:hover{
+    background-color: $fetgreen;
+  }
+}
+
 /* Bootstrap Custom */
 .bg-primary {
     color: #fff;
@@ -34,4 +87,8 @@ $fetgreen: #218C40;
     a {
       color: white;
     }
+}
+.carousel-inner {
+    width: 100%;
+    max-height: 500px !important;
 }

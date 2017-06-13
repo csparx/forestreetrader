@@ -15,13 +15,6 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://use.fontawesome.com/ef8c7632d4.js"></script>
 
-    <!-- SASS Include Files -->
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
-        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-
     <?php wp_head(); ?>
 
 
@@ -81,24 +74,38 @@
       <!-- Main Nav Bar Begin -->
       <div class="container">
         <div class="row">
-          
           <nav class="navbar navbar-light bg-faded main-nav">
-            <ul class="nav navbar-nav navbar-left">
-              <li>
-                <a class="navbar-brand" href="#">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/forestree-logo-with-blade-430x.png" width="430" height="95" alt="">
-                </a>
-              </li>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <ul class="nav navbar-nav navbar-left">
+                <li>
+                  <a class="navbar-brand fet-logo" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/forestree-logo-with-blade-430x.png" width="430" height="95" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <ul class="nav navbar-nav navbar-right main-nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <ul class="nav navbar-nav navbar-right main-nav-links">
+                    <li><a class="bg-fetgreen" href="#">Create Listing</a></li>
+                    <li><a class="bg-fetgreen" href="#">Browse Listings</a></li>
+                    <li><a class="bg-fetorange" href="#">Auction</a></li>
+                  </ul>
+                </div>
+              </div>
 
-            </ul>
-            <ul class="nav navbar-nav navbar-right main-nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Media Center</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Login</a></li>
-            </ul>
+            </div>
           </nav>
 
         </div>
