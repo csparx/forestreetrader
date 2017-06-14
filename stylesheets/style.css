@@ -3,28 +3,38 @@ Style.css SASS File
 */
 /* Imports */
 /* SASS Colors */
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
+.flex {
+  display: flex;
+}
+
+/* line 19, ../sass/style.scss */
+.slick-arrow {
+  display: none !important;
+}
+
+/* line 23, ../sass/style.scss */
 .fet-logo:hover {
   background-color: transparent !important;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .search-slider {
   position: absolute;
   top: 0;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .top-bar-align {
   padding: 15px 0 0 0;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .main-nav {
   margin-bottom: 0px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .fet-green-line {
   background-color: #218C40;
   width: 100px;
@@ -32,20 +42,34 @@ Style.css SASS File
   margin: 10px auto;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .fetorange-outline {
   border: #E39709 solid 4px;
 }
 
 /* Button Style */
-/* line 40, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .btn-fetorange {
   background-color: #E39709;
   color: white;
 }
 
 /* Text Style */
-/* line 46, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
+.footer-icons a {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+/* line 60, ../sass/style.scss */
+#jmwood-title {
+  color: #E39709;
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+/* line 66, ../sass/style.scss */
 .fet-title {
   font-weight: 800;
   font-size: 31.5px;
@@ -53,54 +77,69 @@ Style.css SASS File
   color: #444;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .main-nav-links a {
   margin-top: 25px;
   color: #292929;
   font-size: 16px;
 }
-/* line 57, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .main-nav-links a:hover {
   border-top: 1px solid #218C40;
   background-color: whitesmoke !important;
 }
 
 /* Background Style */
-/* line 65, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
+.bg-footerblack {
+  background-color: #29292B;
+  color: white !important;
+}
+/* line 88, ../sass/style.scss */
+.bg-footerblack a {
+  color: white;
+}
+
+/* line 92, ../sass/style.scss */
+.bg-lightgrey {
+  background-color: #f6f5f5;
+}
+
+/* line 95, ../sass/style.scss */
 .bg-fetgreen {
   background-color: #218C40;
   color: white !important;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .bg-fetorange {
   background-color: #E39709;
   color: white !important;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .bg-fetbrown {
   background-color: #422e13;
   color: white !important;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .bg-hover-fetgreen:hover {
   background-color: #218C40;
 }
 
 /* Bootstrap Custom */
-/* line 84, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .bg-primary {
   color: #fff;
   background-color: #292929;
 }
-/* line 87, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .bg-primary a {
   color: white;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .carousel-inner {
   width: 100%;
   max-height: 500px !important;
