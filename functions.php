@@ -24,4 +24,34 @@ function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
+// Creates FET Listing custom post type
+add_action( 'init', 'fet_listing_post_type' );
+function fet_listing_post_type() {
+  register_post_type( 'fet_listing',
+    array(
+      'labels' => array(
+        'name' => __( 'Listings' ),
+        'singular_name' => __( 'Listing' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+
+// Creates a custom taxonomy for equipment, etc. in the FET Listing CPT
+function equipment_init() {
+  // create a new taxonomy
+  register_taxonomy(
+    'fet_equipment',
+    'fet_listing',
+    array(
+      'label' => __( 'Equipment' ),
+      'rewrite' => array( 'slug' => 'equipment' ),
+      'hierarchical'  => true,
+    )
+  );
+}
+add_action( 'init', 'equipment_init' );
+
 ?>
