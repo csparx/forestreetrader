@@ -12,6 +12,14 @@ function cns_enqueue_style() {
       wp_enqueue_script( 'theme-stylesheet', get_template_directory_uri() . '/slick/slick.min.js', array( 'jquery' ), true );
       wp_enqueue_style( 'slick', trailingslashit( get_template_directory_uri() ) . '/slick/slick.css', false );
       wp_enqueue_style( 'slick-theme', trailingslashit( get_template_directory_uri() ) . '/slick/slick-theme.css', false );
+
+      // Script for Dynamic dropdown menu for make, model, etc.
+      wp_enqueue_script( 'dynamic-search', get_template_directory_uri() . '/assets/js/cns-dynamicsearch.js', array( 'jquery' ), true );
+      global $wp_query;
+      wp_localize_script( 'cns-dynamicsearch', 'cnsdynamicsearch', array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' )
+      ));
+
     }
 
 }

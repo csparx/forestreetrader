@@ -37,6 +37,38 @@
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bg-fetbrown">
                 <h1>Click. Connect. Trade.</h1>
                 <form>
+                  <select name="" id="fet_make" class="form-control">
+                    <?php 
+                    $args = array(
+                        'taxonomy'    => 'fet_equipment',
+                        'hide_empty'  => false,
+                        'parent'      => 0,
+                    );
+                    $fetmakes = get_terms( $args );
+                    $fetcounter = 1;
+                    foreach ($fetmakes as $value) {
+                      echo '<option value"' . $value->term_id . '">' . $value->name . '</option>';
+                      $fetcounter++;
+                    };
+
+                    ?>
+                  </select>
+                  <select name="" id="" class="form-control">
+                    <?php 
+                    $args = array(
+                        'taxonomy'    => 'fet_equipment',
+                        'hide_empty'  => false,
+                        'child_of'      => 0,
+                    );
+                    $fetmakes = get_terms( $args );
+                    $fetcounter = 1;
+                    foreach ($fetmakes as $value) {
+                      echo '<option value"' . $value->term_id . '">' . $value->name . '</option>';
+                      $fetcounter++;
+                    };
+
+                    ?>
+                  </select>
                   <select class="form-control">
                     <option value="1">All Categories</option>
                     <option value="2">2</option>
@@ -54,6 +86,10 @@
                   </select>
                   <button type="submit" class="btn btn-fetorange">Search</button>
                 </form>
+                <script type="text/javascript">
+                var e = document.getElementById("fet_make");
+                var strUser = e.options[e.selectedIndex].value;
+                </script>
               </div>
             </div>
           </div>
